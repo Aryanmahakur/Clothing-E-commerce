@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Slider</title>
+    <style>
+/* Container for all filters */
+
+    </style>
+    <link rel="stylesheet" href="filter.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+    <div class="filter-container">
+
+        <div class="availability">
+            <p> - AVAILABILITY</p>
+            <label class="switch"> <input type="checkbox"> <span class="slider round"></span> </label>
+        </div>
+        <div class="slider-container">
+            <input type="range" min="250" max="1400" "slider" id="priceRange">
+            <p>Price: <span id="priceValue"></span></p>
+            
+            <div class="productsize">
+                <div class="sizechartmain">
+                    <p class="size"> -SIZE</p>
+    
+                    <div class="sizechart">
+                        <input type="checkbox" name="xxs" id="xxs">
+                        <label for="xxs">XXS</label>
+                    </div>
+                    <div class="sizechart">
+                        <input type="checkbox" name="xs" id="xxs">
+                        <label for="xs">XS</label>
+                    </div>
+                    <div class="sizechart">
+                        <input type="checkbox" name="s" id="xxs">
+                        <label for="s">S</label>
+                    </div>
+                    <div class="sizechart">
+                        <input type="checkbox" name="m" id="xxs">
+                        <label for="m">M</label>
+                    </div>
+                    <div class="sizechart">
+                        <input type="checkbox" name="l" id="xxs">
+                        <label for="l">L</label>
+                    </div>
+                </div>
+                <div class="categorymain">
+                    <p class="categoryy">-CATEGORY</p>
+                    <div class="category">
+                        <input type="checkbox" name="HOODIES" id="hoodies">
+                        <label for="HOODIES">Hoodies</label>
+                    </div>
+                    <div class="category">
+                        <input type="checkbox" name="jogger" id="jogger">
+                        <label for="jogger">Jogger</label>
+                    </div>
+                    <div class="category">
+                        <input type="checkbox" name="shorts" id="shorts">
+                        <label for="shorts">Shorts</label>
+                    </div>
+                    <div class="category">
+                        <input type="checkbox" name="sweatshirt" id="sweatshirt">
+                        <label for="sweatshirt">Sweatshirt</label>
+                    </div>
+                    <div class="category">
+                        <input type="checkbox" name="tshirt" id="tshirt">
+                        <label for="tshirt">Tshirt</label>
+                    </div>
+                  
+                </div>
+            </div>
+      <button class="clear">Clear</button>
+      <button class="apply">Apply</button>
+        </div>
+
+
+
+    </div>
+    <script>
+        const priceRange = document.getElementById('priceRange');
+        const priceValue = document.getElementById('priceValue');
+
+        priceRange.addEventListener('input', function () {
+            priceValue.textContent = `$${this.value}`;
+        });
+
+    </script>
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+
+</html>

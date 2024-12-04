@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOTHING ECOM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="head">
+        <div class="navbar">
+            <div class="logo">
+                <p>RELEVANCE</p>
+            </div>
+            <div>
+                <nav>
+                    <ul class="nav-link" id="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="men.html">Men</a></li>
+                        <li><a href="women.html">Women</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="navimg">
+                <a href="#"><img src="images/login.png" alt="Login" id="loginicon" class="icon"></a>
+                <a href="cart.html"><img src="images/cart.png" alt="Cart" class="icon"></a>
+                <a href="#" id="hambericon">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div class="slogan">
+            <h1>Look Good,</h1>
+            <h2>Feel Good, Quick</h2>
+        </div>
+    </div>
+    <marquee bgcolor="white" loop="-1" scrollamount="5" width="100%">Big Sale! Up to 50% off on all items! Hurry, limited time only!</marquee>
+
+    <div class="tohide" id="hidden">
+        <div class="login">
+            <div class="loginfont">
+                <h3>RELEVANCE</h3>
+                <p>Welcome!</p>
+                <p>Sign up to avail the best deal</p>
+            </div>
+            <div class="formlogin">
+                <h4>SIGN UP / LOG IN</h4>
+                <i class="fas fa-times" id="closebtn"></i>
+                <form action="submit_form.php" method="post">
+                    <input type="text" id="name" placeholder="NAME" name="name" required>
+                    <input type="email" id="email" placeholder="EMAIL" required>
+                    <input type="password" id="password" placeholder="PASSWORD" required>
+                    <button type="submit" id="btnsignup">SIGN IN</button>
+                    <button type="submit" id="btnlogin">LOG IN</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="bannerforgender">
+        <div class="menbanner">
+            <img src="images/menbanner.webp" class="menb" alt="Men's Banner">
+            <p class="SHOPM"> SHOP MENS</p>
+            <p class="EX"> EXPLORE</p>
+        </div>
+        <div class="womenbanner">
+            <img src="images/womenbanner.webp" class="womenb" alt="Women's Banner">
+            <p class="SHOPM"> SHOP WOMENS</p>
+            <p class="EX"> EXPLORE</p>
+        </div>
+    </div>
+    <div class="category">
+        <h5>Wardrobe Essentials</h5>
+        <p>Find Your Vibe! Shop Your Staples at Bonkers Corner!</p>
+        <div class="items">
+            <div class="itemschild">
+                <img src="images/displayimg1.webp" alt="hoodie1" id="itemschild">
+                <p>wanna be classic ?</p>
+            </div>
+            <div class="itemschild">
+                <img src="images/displayimg5.webp" alt="hoodie2">
+                <p>play sports ?</p>
+            </div>
+            <div class="itemschild">
+                <img src="images/displayimg2.webp" alt="hoodie3">
+                <p>Winter Essentials</p>
+            </div>
+            <div class="itemschild">
+                <img src="images/displayimg4.webp" alt="hoodie4">
+                <p>comfy</p>
+            </div>
+            <div class="itemschild">
+                <img src="images/displayimg3.webp" alt="cap">
+                <p>Cap's</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="videobanner">
+        <h6>GENZ? THEN DRESS LIKE GENZ</h6>
+        <button class="shopnow">SHOP NOW</button>
+        <video autoplay loop muted src="videos/videobanner.mp4"></video>
+    </div>
+    <h7>Latest news in fashion</h7>
+    <div class="smallbanner">
+        <div class="smallbanner1">
+            <img src="images/smallbanner.webp" alt="smallbanner">
+            <p class="smallbannerp1">Pop Culture’s Influence on Streetwear: Fashion Unveiled</p>
+            <p class="smallbannerp2">In the ever-evolving world of fashion, trends come and go, but few movements have made as significant an impact as streetwear.</p>
+        </div>
+        <div class="smallbanner1">
+            <img src="images/smallbanner2.webp" alt="smallbanner2">
+            <p class="smallbannerp1">Pop Culture’s Influence on Streetwear: Fashion Unveiled</p>
+            <p class="smallbannerp2">In the ever-evolving world of fashion, trends come and go, but few movements have made as significant an impact as streetwear.</p>
+        </div>
+        <div class="smallbanner1">
+            <img src="images/smallbanner1.webp" alt="smallbanner3">
+            <p class="smallbannerp1">Pop Culture’s Influence on Streetwear: Fashion Unveiled</p>
+            <p class="smallbannerp2">In the ever-evolving world of fashion, trends come and go, but few movements have made as significant an impact as streetwear.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footerlinks">
+            <div class="footerlinks1">
+                <h8>RELEVANCE</h8>
+                <div class="social-icons">
+                    <a href="https://www.twitter.com" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.pinterest.com" class="social-icon">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footerlinks1">
+                <p>shop</p>
+                <ul class="ulshop">
+                    <li>Disney</li>
+                    <li>Disney</li>
+                    <li>Disney</li>
+                    <li>Disney</li>
+                    <li>Disney</li>
+                </ul>
+            </div>
+            <div class="footerlinks1">
+                <p>Trending</p>
+                <ul class="ultrending">
+                    <li>Disney</li>
+                    <li>Disney</li>
+                    <li>Disney</li>
+                    <li>Disney</li>
+                    <li>Disney</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

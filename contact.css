@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    /* 1rem = 16px */
+}
+
+body {
+    font-size: 1rem;
+    /* 16px */
+    background-color: #f0f0f0;
+    /* Optional: Light background for contrast */
+
+
+   
+    /* Full viewport height */
+    width: 100vw;
+    /* Full viewport width */
+    overflow-x: hidden;
+    /* Hide overflow */
+
+
+}
+
+h1 {
+    font-size: 2rem;
+    /* 32px */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+ position: sticky;
+top:0px;
+background-color: aliceblue;
+}
+.filters{
+    margin-top:0.5rem;
+    font-size:1rem;
+}
+.nav-link {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+   
+}
+
+.nav-link li a {
+    color:black;
+    /* Change to your desired color */
+    text-decoration: none;
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+   
+    color: black;
+}
+
+/* Ensure specific styling for the logo image */
+.logo p {
+    font-size: 1.5rem;
+    color: black;
+
+    font-family: 'Helvetica', sans-serif;
+}
+#search{
+  font-size:1.5rem;
+    color:black;
+    margin-right:1rem;
+}
+#hambericon{
+      color: white;
+    font-size: 1.5rem;
+    /* Set the size of the icon */
+    position: relative;
+    top: 0;
+    /* Add unit for the top property */
+    right: 1rem;
+    display: none;
+    margin-left: 1.5rem;
+}
+/* Container Styling */
+.info {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+  
+    
+    background-color: #f9f9f9; /* Light background color */
+    padding: 2rem; /* Padding around the container */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+/* Header Styling */
+.info h1 {
+    font-size: 2.5rem; /* Font size for header */
+    margin-bottom: 1rem; /* Space below header */
+    color: #333; /* Text color */
+}
+
+/* Paragraphs Styling */
+.info p {
+    font-size: 1rem; /* Font size for paragraphs */
+    color: #555; /* Text color */
+    line-height: 1.5; /* Line height for readability */
+    margin-bottom: 1rem; /* Space below paragraphs */
+    
+}
+
+/* Specific Paragraphs Styling */
+.infochild1, .infochild2, .infochild3, .info4, .info5, .info6 {
+    font-weight: bold; /* Bold text */
+    color: #000; /* Text color */
+}
+
+/* Contact Numbers Styling */
+.numbers {
+    margin-bottom: 1rem; /* Space below numbers */
+}
+
+/* WhatsApp Number Styling */
+.WhatsAppnumber {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; /* Space below WhatsApp section */
+}
+.whatsapp-icon{
+    margin-bottom:1rem;
+    margin-left:1rem;
+}
+.WhatsAppnumber1 {
+    display: flex;
+    align-items: center;
+   
+}
+
+.WhatsAppnumber1 a {
+    color: #25D366; /* WhatsApp green */
+    font-size: 2rem; /* Icon size */
+    margin-right: 0.5rem; /* Space to the right of the icon */
+}
+
+.WhatsAppnumber1 p {
+    font-size: 1rem; /* Font size for text */
+    color: #555; /* Text color */
+}
+.social-icons {
+    display: flex;
+    gap: 2rem;
+    margin-top:3rem;
+     margin-left:4rem;/* Space between icons */
+    
+    /* Center the icons horizontally */
+  
+    /* Margin around the container */
+}
+
+.social-icon {
+   
+    /* Icon color */
+    font-size: 2rem;
+     color:white;
+    /* Icon size */
+    transition: color 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+.social-icon:hover {
+    color: #555;
+    /* Change color on hover */
+}
+.footerlinks{
+    display:flex;
+ 
+  background-color:black;
+    gap:20rem;
+    border:1px solid;
+    height:15rem;
+    
+}
+h8{
+      margin-left:3.5rem;
+    font-size:2rem;
+ position:relative;
+     color:white;
+    top:2rem;
+}
+.footerlinks1 p{
+    font-size:2rem;
+     position:relative;
+    top:1.5rem;
+    left:-0.5rem;
+     color:white;
+}
+.ulshop{
+    margin-top:2rem;
+    list-style:none;
+}
+.ultrending{
+    margin-top:2rem;
+       list-style:none;
+}
+.ulshop li{
+    margin-bottom:1rem;
+    color:white;
+}
+.ultrending li{
+      margin-bottom:1rem;
+     color:white;
+    position:relative;
+    right:-2rem;
+}
+
+/* Media Query for smaller screens */

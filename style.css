@@ -1,0 +1,386 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    /* 1rem = 16px */
+}
+
+body {
+    font-size: 1rem;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Header */
+.head {
+    height: 30rem;
+    background-image: url("images/mainbanner.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding-top: 1rem;
+    background-color:transparent;
+}
+
+.nav-link {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav-link li a {
+    color: white;
+    text-decoration: none;
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+    filter: invert(100%) sepia(100%) saturate(1000%) hue-rotate(180deg);
+}
+
+.logo p {
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* Slogan */
+.slogan h1 {
+    font-size: 4rem;
+}
+
+.slogan h2 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 3rem;
+}
+
+.slogan {
+    z-index: 1;
+    text-shadow: 2px 2px 20px rgba(0, 0, 5, 0.5);
+    color: white;
+    transform: translate(0%, 80%);
+}
+
+/* Login form */
+.login {
+    position: absolute;
+    background-color: black;
+    z-index: 1000;
+    display: flex;
+    width: 60vw;
+    border: 2px solid;
+    height: 20rem;
+    justify-content: center;
+    border-radius: 12px;
+    transform: translate(35%, -125%);
+}
+
+.loginfont {
+    width: 60%;
+}
+
+.loginfont p {
+    color: white;
+    font-size: 2rem;
+    margin: 1rem 1.5rem;
+    position: relative;
+    top: 4rem;
+}
+
+.loginfont h3 {
+    position: relative;
+    top: 4rem;
+    color: white;
+    font-size: 2rem;
+    margin: 1rem 1.5rem;
+}
+
+.formlogin h4 {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.formlogin {
+    display: flex;
+    background-color: white;
+    width: 40%;
+    flex-direction: column;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 90%;
+    margin: 0.5rem 0.8rem;
+    height: 25%;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    width: 50%;
+    height: 20%;
+    border-radius: 12px;
+    margin: 0.5rem 4.5rem;
+}
+
+input::placeholder {
+    text-align: left;
+    padding-left: 20px;
+}
+
+#closebtn {
+    position: absolute;
+    right: 12px;
+    top: 7px;
+}
+
+.tohide {
+    display: none;
+}
+
+/* Hamburger icon */
+#hambericon {
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+    top: 0;
+    right: 1rem;
+    display: none;
+    margin-left: 1.5rem;
+}
+
+.navimg {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Banner for gender */
+.bannerforgender {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.menb, .womenb {
+    width: 100%;
+    height: auto;
+}
+
+.SHOPM {
+    font-size: 2rem;
+    transform: translate(5%, -1000%);
+}
+
+.EX {
+    transform: translate(15%, -600%);
+    display: inline-block;
+    position: absolute;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: black;
+    border: 2px solid #999;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Category */
+.category {
+    text-align: center;
+}
+
+.category h5 {
+    font-size: 2.5rem;
+}
+
+.category p {
+    font-size: 1.5rem;
+}
+
+.items {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.itemschild img {
+    width: 100%; /* Ensure images fit within their container */
+    height: auto;
+    max-width: 20rem;
+    margin: 1rem 0.5rem;
+}
+
+.itemschild {
+    transition: transform 0.3s ease;
+    margin: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.itemschild:hover {
+    transform: translateY(-5px);
+}
+
+/* Video banner */
+.videobanner video {
+    width: 100%;
+    height: auto;
+    max-height: 45rem;
+}
+
+.videobanner {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.videobanner h6 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.shopnow {
+    transform: translate(330%, 500%);
+    display: inline-block;
+    padding: 1rem 2rem;
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #999;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Small banners */
+.smallbanner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.smallbanner1 {
+    flex: 1;
+    max-width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.smallbanner1:hover {
+    transform: translateY(-5px);
+}
+
+.smallbanner1 img {
+    width: 100%;
+    border-bottom: 2px solid #eee;
+}
+
+.smallbannerp1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.smallbannerp2 {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+h7 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* Footer */
+.social-icons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-left: 4rem;
+}
+
+.social-icon {
+    font-size: 2rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #555;
+}
+
+.footerlinks {
+    display: flex;
+    margin-top: 2rem;
+    background-color: black;
+    gap: 20rem;
+    border: 1px solid;
+    height: 15rem;
+}
+
+h8 {
+    margin-left: 3.5rem;
+    font-size: 2rem;
+    position: relative;
+    color: white;
+    top: 2rem;
+}
+
+.footerlinks1 p {
+    font-size: 2rem;
+    position: relative;
+    top: 1.5rem;
+    left: -0.5rem;
+    color: white;
+}
+
+.ulshop, .ultrending {
+    margin-top: 2rem;
+    list-style: none;
+}
+
+.ulshop li, .ultrending li {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.ultrending li {
+    position: relative;
+    right: -2rem;
+}

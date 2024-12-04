@@ -1,0 +1,164 @@
+/* General body styling */
+
+/* Container for all filters */
+.filter-container {
+
+    height: 75vh; /* Height of the box set to 75% of the viewport height */
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-sizing: border-box;
+    overflow: hidden; /* Hide overflow */
+    display: none;
+    z-index: 1000;
+    position:absolute;
+}
+
+/* Availability section */
+.availability {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+}
+
+.availability p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Slider container */
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+    flex-grow: 1; /* Allow to grow to fill available space */
+}
+
+.slider-container p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+/* Product size and category */
+.productsize {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 1rem;
+    flex-grow: 1; /* Allow to grow to fill available space */
+}
+
+.sizechartmain, .categorymain {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-basis: 50%; /* Ensure both sections take equal space */
+}
+
+.sizechart, .category {
+    display: flex;
+    align-items: center;
+}
+
+.sizechart input, .category input {
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.sizechart label, .category label {
+    font-size: 1rem;
+}
+
+/* Section headings */
+.size, .categoryy {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    width: 100%;  /* Ensure it takes full width */
+}
+
+/* Button styling */
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 48%;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+/* Toggle switch styling */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider.round {
+    border-radius: 20px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: black;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}

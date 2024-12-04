@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    /* 1rem = 16px */
+}
+
+body {
+    font-size: 1rem;
+    /* 16px */
+    background-color: #f0f0f0;
+    /* Optional: Light background for contrast */
+
+
+    height: 100vh;
+    /* Full viewport height */
+    width: 100vw;
+    /* Full viewport width */
+    overflow-x: hidden;
+    /* Hide overflow */
+
+
+}
+
+h1 {
+    font-size: 2rem;
+    /* 32px */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    position: sticky;
+    top: 0px;
+    background-color: transparent;
+}
+
+.filters {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.nav-link {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+
+}
+
+.nav-link li a {
+    color: black;
+    /* Change to your desired color */
+    text-decoration: none;
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+
+    color: black;
+}
+
+/* Ensure specific styling for the logo image */
+.logo p {
+    font-size: 1.5rem;
+    color: black;
+
+    font-family: 'Helvetica', sans-serif;
+}
+
+#search {
+    font-size: 1.5rem;
+    color: black;
+    margin-right: 1rem;
+}
+
+#hambericon {
+    color: white;
+    font-size: 1.5rem;
+    /* Set the size of the icon */
+    position: relative;
+    top: 0;
+    /* Add unit for the top property */
+    right: 1rem;
+    display: none;
+    margin-left: 1.5rem;
+}
+
+.banner img {
+    width: 100%;
+    height: 20rem;
+}
+
+.menproduct {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    /* Space between items */
+    padding: 1rem;
+    /* Padding around the container */
+    width: 100vw;
+}
+
+.menproductchild img {
+    width: 95%;
+}
+
+.details {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.price {
+    margin: 1rem 0rem;
+    text-align: center;
+    color: red;
+}
+
+.social-icons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    /* Space between icons */
+
+    /* Center the icons horizontally */
+
+    /* Margin around the container */
+}
+
+.social-icon {
+
+    /* Icon color */
+    font-size: 2rem;
+    color: white;
+    /* Icon size */
+    transition: color 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+.social-icon:hover {
+    color: #555;
+    /* Change color on hover */
+}
+
+.footerlinks {
+    display: flex;
+    margin-top: 2rem;
+    background-color: black;
+    gap: 20rem;
+    border: 1px solid;
+    height: 15rem;
+
+}
+
+h8 {
+    margin-left: 3.5rem;
+    font-size: 2rem;
+    position: relative;
+    color: white;
+    top: 2rem;
+}
+
+.footerlinks1 p {
+    font-size: 2rem;
+    position: relative;
+    top: 1.5rem;
+    left: -0.5rem;
+    color: white;
+}
+
+.ulshop {
+    margin-top: 2rem;
+    list-style: none;
+}
+
+.ultrending {
+    margin-top: 2rem;
+    list-style: none;
+}
+
+.ulshop li {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.ultrending li {
+    margin-bottom: 1rem;
+    color: white;
+    position: relative;
+    right: -2rem;
+}
+
+/* General body styling */
+
+/* Container for all filters */
+.filter-container {
+    width: 40vw;
+    height: 90vh;
+    /* Height of the box set to 75% of the viewport height */
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* Hide overflow */
+    z-index: 1000;
+    position: absolute;
+    left: -50rem;
+    transition: left 0.3s ease-in-out;
+}
+
+.filter-container.active {
+    left: 0rem;
+    ;
+}
+
+/* Availability section */
+.availability {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.availability p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.container {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+/* Slider container */
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+    flex-grow: 1;
+    /* Allow to grow to fill available space */
+}
+
+.slider-container p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+/* Product size and category */
+.productsize {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 1rem;
+    flex-grow: 1;
+    /* Allow to grow to fill available space */
+}
+
+.sizechartmain,
+.categorymain {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-basis: 50%;
+    /* Ensure both sections take equal space */
+}
+
+.clear,
+.apply {
+    width: 50%;
+    height: 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #ddd;
+    /* Light grey background */
+    color: #333;
+    /* Dark grey text */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.clear:hover,
+.apply:hover {
+    background-color: #bbb;
+    /* Slightly darker grey on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge the button on hover */
+}
+
+/* Ensure both buttons are aligned neatly */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.sizechart,
+.category {
+    display: flex;
+    align-items: center;
+}
+
+.sizechart input,
+.category input {
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.sizechart label,
+.category label {
+    font-size: 1rem;
+}
+
+/* Section headings */
+.size,
+.categoryy {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    width: 100%;
+    /* Ensure it takes full width */
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+/* Toggle switch styling */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider.round {
+    border-radius: 20px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.pricee {
+    border: 1px solid;
+    width: 30%;
+    padding: 1rem;
+    height: rem;
+}
+
+input:checked+.slider {
+    background-color: black;
+}
+
+input:checked+.slider:before {
+    transform: translateX(20px);
+}
+.searchbox{
+    right:-50rem;
+    width:40vw;
+    border:1px solid;
+    max-height:100vh;
+   overflow-y:scroll;
+    border-radius:8px;
+   scrollbar-width:none;
+    z-index:1000;
+    background-color:white;
+    position:absolute;
+    transition: right 0.3s ease-in-out;
+}
+.searchbox.move{
+    right:0rem;
+}
+.searchhead{
+    display:flex;
+    justify-content:space-between;
+    margin:1rem 1rem;
+    border-bottom:1px solid;
+}
+#searchspace{
+    width:85%;
+    border:none;
+    height:2rem;
+}
+.buttons{
+    display:flex;
+    gap:1rem;
+    overflow-x:scroll;
+    scrollbar-width:none;
+    
+}
+#btn1{
+   width:30rem;
+    height:2rem;
+    border-radius:22px;
+  margin-top:1.5rem;
+}
+#btn{
+     width:50rem;
+    margin-left:1rem;
+    height:2rem;
+    border-radius:22px;
+     margin-top:1.5rem;
+}
+.displaysearchitem{
+    display:flex;
+    flex-wrap:wrap;
+}
+.displaysearchitemchild{
+    width:40%;
+    height:22rem;
+   text-align:center;
+    margin:1rem;
+}
+.displaysearchitemchild img{
+    width:100%;
+   
+}
+.detailssearch{
+    margin-top:0;
+}
+.pricesearch{
+    margin-top:-0.4rem;
+}
+.TRENDING{
+    margin-top:2rem;
+}
